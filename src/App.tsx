@@ -9,7 +9,7 @@ import { Station } from './types';
 
 const { Header, Footer, Content } = Layout;
 const apiUrl = 'https://toronto-us.publicbikesystem.net/ube/gbfs/v1/en/';
-const runnerInterval = 3000;
+const runnerInterval = 30000;
 
 function App() {
   const [state, dispatch] = useReducer(applicationReducer, applicationInitialState);
